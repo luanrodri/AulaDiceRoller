@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Jogue o dado"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/RollDice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="1" />
+
     <Button
         android:id="@+id/RollDice"
         android:layout_width="wrap_content"
@@ -16,17 +29,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/Result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:text="Jogue o dado"
-        android:textSize="36sp"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toTopOf="@+id/RollDice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="1" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/dice_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
